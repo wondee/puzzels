@@ -13,7 +13,6 @@ public class JavaQuine {
 	}
 	
 	private static final void printClass(Class<?> c) {
-		
 		Writer writer = new StringWriter();
 		Decompiler.decompile(c.getName().replace(".", "/"), new PlainTextOutput(writer ));
 		
